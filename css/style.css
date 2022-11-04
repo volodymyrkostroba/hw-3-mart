@@ -1,0 +1,62 @@
+:root{
+    --main-font:'Open Sans', sans-serif;
+    --second-font:'Roboto', sans-serif;
+
+    --site-nav-color:#1f1212;
+    --logo-color:#605e5e;
+    --link-hover-color:#1abc9c;
+    --main-title-color:#515151;
+    --name-bg-color:#323232;
+    --price-bg-color:#8c8c8c;
+
+    --name-hover-bg-color:#1abc9c;
+    --price-hover-bg-color:#7fd9c7;
+
+    --news-title-color:#555252;
+};
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: auto;
+  }
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 0;
+}
+
+button{
+    all: unset;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+}
