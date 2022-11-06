@@ -5,6 +5,7 @@
     --top-hader-link-color:#dff5f1;
     --top-header-bg-collor:#19bb9b;
 
+    --hero-text-color:#fffcfc;
 
     --site-nav-color:#1f1212;
     --logo-color:#605e5e;
@@ -54,6 +55,7 @@ a{
 
 p{
     padding: 0;
+    margin: 0;
 }
 
 button{
@@ -93,6 +95,8 @@ button{
 
     color: var(--top-hader-link-color);
     padding: 25px 15px;
+
+    transition: all 250ms linear;
 }
 
 .phone{
@@ -121,12 +125,7 @@ background-size: contain;
 margin-right: 10px;
 }
 
-.contacts__link:hover,
-.contacts__link:focus,
-.user-nav__link:hover,
-.user-nav__link:focus{
-    color: #fff;
-}
+
 /*  */
 
 .user-nav{
@@ -145,13 +144,26 @@ margin-right: 10px;
 
     color: var(--top-hader-link-color);
     padding: 25px 15px;
+
+    transition: all 250ms linear;
+}
+
+.contacts__link:hover,
+.contacts__link:focus,
+.user-nav__link:hover,
+.user-nav__link:focus{
+    color: #fff;
 }
 
 /* bottom header */
-
+.bottom-header .container{
+    display: flex;
+    align-items: center;
+}
 
 
 .logo{
+    margin: 24px 0;
     margin-right: auto;
 
     font-family: var(--second-font);
@@ -160,6 +172,8 @@ margin-right: 10px;
     text-transform: uppercase;
 
     color: var(--logo-color);
+
+    
 }
 
 .logo::first-letter{
@@ -182,6 +196,8 @@ margin-right: 10px;
     text-transform: uppercase;
 
     color: var(--site-nav-color);
+
+    transition: all 250ms linear;
 }
 
 .site-nav__link:hover,
@@ -193,7 +209,11 @@ margin-right: 10px;
 
 /*  */
 
-.hero{
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/banner/banner.jpg);
     background-position: center;
@@ -201,4 +221,156 @@ margin-right: 10px;
     background-size: cover;
     
    height: 600px;
+}
+
+.hero{
+text-align: center;
+}
+
+.hero__top-description{
+
+    font-family: var(--second-font);
+    font-weight: 300;
+    font-size: 48px;
+    
+
+    color: var(--hero-text-color);
+    margin-bottom: 20px;
+}
+
+.and{
+    font-weight: 700;
+    color: var(--link-hover-color);
+
+}
+
+.hero__bottom-description{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 48px;
+    
+
+    color: var(--hero-text-color);
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.sale{
+    font-weight: 700;
+    color: var(--link-hover-color);
+ 
+}
+
+.hero__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14;
+    text-transform: uppercase;
+
+    color: var(--hero-text-color);
+
+    width: 170px;
+    height: 40px;
+    background-color: var(--link-hover-color);
+
+    border-radius: 5px;
+
+    transform: scale(1);
+    transition: transform 250ms linear;
+    
+}
+
+.hero__link:hover,
+.hero__link:focus{
+    transform: scale(1.05);
+}
+
+
+/* //////  Fetures */
+
+.features{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.fiatures-list{
+    display: flex;
+    align-items: center;
+    
+}
+
+.fiatures-list__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    width: calc(25%-46.666666);
+    margin-right: 35px;
+
+    text-align: center;
+    
+}
+
+.fiatures-list__item:last-child{
+    margin-right: 0;
+}
+
+.fiatures-list__item::before{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    margin-bottom: 60px;
+}
+
+.sun::before{
+    background-image: url(../img/icons/setting.png);
+}
+
+.compas::before{
+background-image: url(../img/icons/compass.png);
+}
+
+.world::before{
+    background-image: url(../img/icons/world.png);
+    }
+
+.seif::before{
+        background-image: url(../img/icons/power.png);
+        }
+
+
+.fiatures-list__title{
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    color: var(--news-title-color);
+
+    margin-bottom: 35px;
+}
+
+.fiatures-list__description{
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 1.6;
+
+    color: var(--news-title-color);
 }
