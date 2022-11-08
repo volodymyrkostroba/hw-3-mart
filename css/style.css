@@ -439,6 +439,7 @@ background-image: url(../img/icons/compass.png);
 
 .overlay{
     position: relative;
+    overflow: hidden;
 }
 
 .overlay::after{
@@ -530,7 +531,9 @@ background-repeat: no-repeat;
     width: calc(33.33333%-5px);
 }
 
-
+.bascket{
+    background-color: #323232;
+}
 
 .like::before{
     background-image: url(../img/hover/like.png);
@@ -694,3 +697,109 @@ background-color: var(--name-hover-bg-color);
     transform: scale(1.1);
     }
     
+
+
+    /* footer */
+
+
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 140px;
+
+        background: linear-gradient(rgba(77, 197, 171,0.7), rgba(77, 197, 171,0.7)),
+    url(../img/banner/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.footer__hero{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.footer .main-title::before{
+    background-image: url(../img/lines/newslater-line.png);
+}
+
+.footer .main-title{
+    margin-bottom: 25px;
+}
+
+.footer__description{
+    font-family: var(--main-font);
+    font-weight: 200;
+    font-size: 18px;
+
+    color: #fff;
+    text-transform: capitalize;
+
+    margin-bottom: 45px;
+}
+
+.newslater__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-top: 50px;
+  }
+  
+  .newslater__input {
+    all: unset;
+  
+    display: inline-block;
+    height: 60px;
+    width: 450px;
+    padding-left: 30px;
+  
+    font-family: var(--open-sans-font);
+    font-weight: 300;
+    font-size: 16px;
+  
+    color: #6c6969;
+    background-color: #fff;
+  
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .newslater__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    height: 60px;
+    width: 92px;
+  
+    background-color: #4dc5ab;
+  
+    border: 2px #fff solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  
+    transition: background-color 250ms linear;
+  }
+  
+  .newslater__button::before {
+    display: block;
+    content: '';
+  
+    width: 45px;
+    height: 30px;
+  
+    background-image: url(../img/icons/newslatter-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: background-color 250ms linear;
+  }
+  
+  .newslater__button:hover {
+    background-color: var(--price-hover-color);
+  }
+  
